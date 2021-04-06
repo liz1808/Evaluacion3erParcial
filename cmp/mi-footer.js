@@ -1,7 +1,7 @@
 class MiFooter
   extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = /* html */
+    this.innerHTML = 
       `<p>
         Evaluacion; 2021
         Lizbeth Angelica Martinez Ceja.
