@@ -10,7 +10,7 @@ import {
 
 class MiNav extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = /* html */
+    this.innerHTML = 
       `<ul>
         <li>
           <a href="index.html">
@@ -25,10 +25,7 @@ class MiNav extends HTMLElement {
       muestraError);
   }
 
-  /**
-   * @param {import(
-      "../lib/tiposFire.js").User}
-      usu */
+  
   async cambiaUsuario(usu) {
     if (usu && usu.email) {
       let html = "";
@@ -36,7 +33,7 @@ class MiNav extends HTMLElement {
         await cargaRoles(
           usu.email);
      if (roles.has("Cliente")) {
-        html += /* html */
+        html += 
           `<li>
             <a href=
               "chat.html">Chat</a>
@@ -44,7 +41,7 @@ class MiNav extends HTMLElement {
       }
       if (roles.has(
         "Administrador")) {
-        html += /* html */
+        html += 
           `<li>
             <a href=
 "alumnos.html">Alumnos</a>
